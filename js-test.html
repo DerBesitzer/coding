@@ -7,18 +7,18 @@
 </head>
 <body>
     <script>
+        function copySorted (arr) {
+            return arr.slice().sort();
+        }
+        
+        
+        let arr = ["HTML", "JavaScript", "CSS"];
 
-    // function add7 (number) {
-    //     return (number + 7)
-    // }
+        let sorted = copySorted(arr);
 
-    // function multiply (first, second) {
-    //     return (first*second)
-    // }
+        alert( sorted ); // CSS, HTML, JavaScript
+        alert( arr ); // HTML, JavaScript, CSS (no changes)
 
-    // const multiply = (x,y) => x * y;
-
-    console.log(multiply(3,3))
     </script>
 </body>
 </html>
